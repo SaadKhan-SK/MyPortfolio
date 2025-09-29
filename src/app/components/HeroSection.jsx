@@ -22,13 +22,9 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                "Saad",
-                1000,
-                "Laravel Developer",
+                "Ahmad Waleed",
                 1000,
                 "Flutter Developer",
-                1000,
-                "Web Developer",
                 1000,
               ]}
               wrapper="span"
@@ -37,8 +33,9 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+            Experienced Flutter Team Lead with a proven record of building
+            high-quality, scalable apps for Android and iOS. Passionate about
+            innovation, quality, and exceeding client expectations.
           </p>
           <div>
             <Link
