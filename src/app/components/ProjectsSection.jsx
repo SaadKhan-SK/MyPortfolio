@@ -165,7 +165,7 @@ const projectsData = [
     description:
       "Developing a white-labeled telehealth platform featuring secure video consultations via Agora, real-time chat with Socket.IO, EHR integration, appointment bookings, file/resource sharing, and complete health record management. Built entirely in Flutter for both Android and iOS.",
     image: "/images/projects/healthcare.png",
-    tag: ["All", "Mobile"],
+    tag: ["All", "Mobile", "Web"],
     techstack: ["Flutter", "Node JS"],
     previewUrl:
       "https://www.figma.com/design/716NlwfmubPtbY2UkUyNv3/Health-Care-App?node-id=3-500&p=f&t=CTEqO2O01TIfI04Y-0"
@@ -209,6 +209,16 @@ const projectsData = [
     image: "/images/projects/eyeguard.png",
     tag: ["All", "Mobile"],
     techstack: ["Flutter", "Node JS"],
+    previewUrl:
+      "https://figma.com/design/Yv95X4TStNHukFMdFoB4uf/EyeGuard?node-id=0-1&p=f&t=5ysw3ZvadNkmBpgN-0"
+  },
+  {
+    id: 7,
+    title: "SigmaSold",
+    description: "SigmaSold is a full-featured eCommerce web application built using Laravel. It provides a complete solution for online product selling with an intuitive admin panel to manage inventory, product variations, categories, and orders. The system dynamically displays available products based on stock availability and supports multiple product variants such as size, color, and pricing. SigmaSold ensures a seamless shopping experience for customers and efficient store management for admins.",
+    image: "/images/projects/sigmasold.png",
+    tag: ["All", "Web"],
+    techstack: ["Laravel"],
     previewUrl:
       "https://figma.com/design/Yv95X4TStNHukFMdFoB4uf/EyeGuard?node-id=0-1&p=f&t=5ysw3ZvadNkmBpgN-0"
   }
@@ -270,6 +280,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              techstack={project.techstack}
             />
           </motion.li>
         ))}

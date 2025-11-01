@@ -29,12 +29,13 @@ const ProjectCard = ({ imgUrl, title, description, techstack = [], previewUrl })
 
       {/* Content Section */}
       <div className="text-white rounded-b-xl mt-3 bg-[#181818] py-6 px-4">
-        <h5 className="text-lg font-semibold mb-2">{title}</h5>
+        <Link href={previewUrl}>
+          <h5 className="text-lg font-semibold mb-2">{title}</h5>
+        </Link>
 
         {/* Description with toggle */}
-        <p className={`text-[#ADB7BE] text-sm transition-all ${
-          expanded ? "line-clamp-none" : "line-clamp-3"
-        }`}>
+        <p className={`text-[#ADB7BE] text-sm transition-all ${expanded ? "line-clamp-none" : "line-clamp-3"
+          }`}>
           {description}
         </p>
 
